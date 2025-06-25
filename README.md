@@ -1,7 +1,7 @@
 
 # Material Dynamics Analysis with Deep Generative Model
 
-This repository contains a unified Python-based implementation of **Progressive Growing GANs (PGGAN)**, designed to support the research study:
+This repository contains a unified Python-based implementation of **GANs** trained with progressive growing strategy, designed to support the research study:
 
 **Title:** Material Dynamics Analysis with Deep Generative Model  
 **Scope:** This work explores how deep generative models can infer intermediate transformations of material systems by training on experimental images that capture discrete snapshots of dynamic processes.
@@ -20,21 +20,14 @@ By treating the generative model as a probabilistic representation of the underl
 
 ```
 .
-├── train_pggan.py           # Main training script for 2D/3D PGGAN
+├── train_pggan.py           # Main training script for 2D/3D GAN
 ├── pgan_gen.py              # Script for generating images from trained models (used in downstream Monte Carlo simulation)
-├── pg_gan.py                # Full PGGAN model definition with fade-in and stabilization stages
+├── pg_gan.py                # Full GAN model definition with fade-in and stabilization stages
 ├── config/                  # YAML configuration files for each case study
 ├── utils/
 │   ├── plot.py              # Visualization functions for 2D and 3D output samples
 │   └── gan_dat_gen.py       # Data iterator for loading experimental image datasets
 ```
-
-## Features
-
-- Supports both **2D** and **3D image generation**
-- Implements **Progressive Growing GAN (PGGAN)** evolving image resolution over training stages
-- Designed for **later integration with Monte Carlo sampling pipelines** to infer transformation pathways
-- Includes **visualization utilities** for monitoring training progression and inspecting generated samples
 
 ## Requirements
 
