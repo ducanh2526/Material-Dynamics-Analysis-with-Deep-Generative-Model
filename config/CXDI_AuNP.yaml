@@ -6,7 +6,7 @@ batch_size:
 - 8
 - 4
 d_extra_steps: 1
-data_path: /data//comp_data/
+data_path: /data/comp_data/
 filters:
 - 512
 - 512
