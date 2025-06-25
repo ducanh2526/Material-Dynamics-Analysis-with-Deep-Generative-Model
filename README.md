@@ -76,7 +76,7 @@ train_dir: data/CXDI_testChart
 ### 3. Run Training
 
 ```bash
-python train_pggan.py --config config/CXDI_testChart.yaml
+python train_pggan.py --config ./config/CXDI_testChart.yaml
 ```
 
 Training will progress through each resolution level with automated **fade-in** and **stabilization** control.
